@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Not Found | Codeland</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Mobile Header only -->
+  <div class="header mobile-only">
+    <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+    <div class="header-title">Codeland</div>
+    <div class="toggle-btn" onclick="toggleTopNav()">☰</div>
+  </div>
+
+  <div class="sidebar hidden-mobile" id="sidebar">
+    <div>
+      <div class="top-section">
+        <span class="close-btn" onclick="toggleSidebar()">×</span>
+        <img src="img/logocs.png" alt="Logo" />
+      </div>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">COMPANY</a>
+        <a href="#">WHY CHOOSE US</a>
+        <a href="#">INDUSTRIES</a>
+        <a href="#">CONSULTING</a>
+        <a href="#">SUPPORT</a>
+      </nav>
+    </div>
+    <div class="footer-icons">
+      <i>f</i>
+      <i>in</i>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="header-title">Codeland</div>
+    <div class="top-nav mobile-hidden" id="topNav">
+      <a href="#">Company</a>
+      <a href="#">Consulting</a>
+      <a href="#">Contact</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Footer</a>
+      <a href="#">Healthcare</a>
+      <a href="#">Homepage</a>
+      <a href="#">Industries</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Project Methodology</a>
+      <a href="#">Services & Technologies</a>
+      <a href="#">Waste Management</a>
+      <a href="#">Why Choose Us</a>
+    </div>
+
+    <div class="main-area">
+      <div class="page-title">Page Not Found</div>
+      <div class="description">
+        The page you are looking for does not exist, or it has been moved. Please try searching using the form below.
+      </div>
+      <form class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- New Footer -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div>
+        <h3>Codeland</h3>
+      </div>
+      <div>
+        <h4>About</h4>
+        <p>Team</p>
+        <p>History</p>
+        <p>Careers</p>
+      </div>
+      <div>
+        <h4>Privacy</h4>
+        <p>Privacy Policy</p>
+        <p>Terms and Conditions</p>
+        <p>Contact Us</p>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter/X</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show-mobile');
+      sidebar.classList.toggle('hidden-mobile');
+    }
+
+    function toggleTopNav() {
+      const topNav = document.getElementById('topNav');
+      topNav.classList.toggle('show-mobile');
+      topNav.classList.toggle('mobile-hidden');
+    }
+  </script>
+
+</body>
+</html>
